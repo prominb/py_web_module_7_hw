@@ -8,7 +8,7 @@ from seeds.fill_groups import groups
 fake = Faker('uk-UA')
 
 
-def drop_data():
+def drop_data():  # ВИнести окремо, 5 раз одне і теж написано
     try:
         session.query(Student).delete()
         session.commit()
