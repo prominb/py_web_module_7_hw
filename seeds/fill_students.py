@@ -3,10 +3,9 @@ from faker import Faker
 
 from conf.db import session
 from conf.models import Student
-from seeds.fill_groups import groups
+
 
 fake = Faker('uk-UA')
-
 
 def drop_data():  # ВИнести окремо, 5 раз одне і теж написано
     try:
