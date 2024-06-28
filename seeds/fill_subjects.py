@@ -17,7 +17,7 @@ def drop_data():
     try:
         session.query(Subject).delete()
         session.commit()
-        print("Дані таблиці GROUPS видалено!")
+        print("Дані таблиці SUBJECTS видалено!")
     except SQLAlchemyError as e:
         print(f"Помилка: {e}")
         session.rollback()
@@ -30,7 +30,7 @@ def insert_subjects():
             subject = Subject(name=sbj[0], teacher_id=sbj[1])
             session.add(subject)
         session.commit()
-        print("Групи успішно додано!")
+        print("Предмети успішно додано!")
     except SQLAlchemyError as e:
         print(f"Помилка: {e}")
         session.rollback()

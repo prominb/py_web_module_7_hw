@@ -21,28 +21,20 @@ def drop_data():  # ВИнести окремо, 5 раз одне і теж н�
 
 def insert_students():
     try:
-        for i in range(len(groups)):  # ЦЕ неправильно, треба ID витягнути з БД
-            for _ in range (5): 
+        for i in range(1, 4):  # ЦЕ неправильно, треба ID витягнути з БД
+            for _ in range (15): 
                 student = Student(
                     fullname = fake.name(),
                     group_id = i
                 )
                 session.add(student)
         session.commit()
-        print("Групи успішно додано!")
+        print("Студентів успішно додано!")
     except SQLAlchemyError as e:
         print(f"Помилка: {e}")
         session.rollback()
     finally:
         session.close()
-
-    for i in range(1, 4):
-        for _ in range (15):
-            student = Student(
-            fullname = fake.name(),
-            group_id = i
-            )
-            session.add(student)
 
 
 def main():
