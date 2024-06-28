@@ -4,10 +4,7 @@ from conf.db import session
 from conf.models import Group
 
 
-groups = ("Міністерство внутрішніх справ",
-          "Міністерство економіки",
-          "Міністерство енергетики",
-          "Міністерство оборони")
+groups = ("КІТ-122А", "КІТ-123Б", "КІТ-125А")
 
 def drop_data():
     try:
