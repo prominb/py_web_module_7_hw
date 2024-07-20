@@ -20,7 +20,7 @@ def drop_data():  # ВИнести окремо, 5 раз одне і теж н�
 
 def insert_students():
     try:
-        for i in range(1, 4):  # ЦЕ неправильно, треба ID витягнути з БД
+        for i in range(1, 4):
             for _ in range (15): 
                 student = Student(
                     fullname = fake.name(),
@@ -34,12 +34,3 @@ def insert_students():
         session.rollback()
     finally:
         session.close()
-
-
-# def main():
-#     # drop_data()
-#     insert_students()
-
-
-# if __name__ == '__main__':
-#     main()

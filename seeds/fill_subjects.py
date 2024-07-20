@@ -36,10 +36,3 @@ def insert_subjects():
         session.rollback()
     finally:
         session.close()
-
-# def main():
-#     # drop_data()
-#     insert_subjects()
-
-# if __name__ == '__main__':
-#     main()

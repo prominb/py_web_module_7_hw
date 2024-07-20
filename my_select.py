@@ -28,8 +28,6 @@ def select_4():  # Знайти середній бал на потоці (по 
     return result
 
 def select_5():  # Знайти які курси читає певний викладач.
-    # result = session.query(Subject.name).select_from(Subject)\
-    #     .join(Teacher).where(Teacher.fullname.like('Шмиг%'))
     result = session.execute(
         select(Subject.name).
         join(Teacher).

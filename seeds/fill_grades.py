@@ -42,10 +42,3 @@ def insert_grades():
         session.rollback()
     finally:
         session.close()
-
-# def main():
-#     # drop_data()
-#     insert_grades()
-
-# if __name__ == '__main__':
-#     main()

@@ -29,10 +29,3 @@ def insert_groups():
         session.rollback()
     finally:
         session.close()
-
-# def main():
-#     # drop_data()
-#     insert_groups()
-
-# if __name__ == '__main__':
-#     main()
