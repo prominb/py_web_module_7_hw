@@ -34,9 +34,11 @@ def insert_teachers():
     finally:
         session.close()
 
-def main():
-    # drop_data()
-    insert_teachers()
+# def main():
+#     # drop_data()
+#     insert_teachers()
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
+# def test_func():
+#     print(teachers)

@@ -36,10 +36,10 @@ def insert_students():
         session.close()
 
 
-def main():
-    # drop_data()
-    insert_students()
+# def main():
+#     # drop_data()
+#     insert_students()
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

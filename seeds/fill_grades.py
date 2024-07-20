@@ -43,9 +43,9 @@ def insert_grades():
     finally:
         session.close()
 
-def main():
-    # drop_data()
-    insert_grades()
+# def main():
+#     # drop_data()
+#     insert_grades()
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

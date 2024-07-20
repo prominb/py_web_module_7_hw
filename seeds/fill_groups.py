@@ -30,9 +30,9 @@ def insert_groups():
     finally:
         session.close()
 
-def main():
-    # drop_data()
-    insert_groups()
+# def main():
+#     # drop_data()
+#     insert_groups()
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

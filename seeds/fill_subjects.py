@@ -37,9 +37,9 @@ def insert_subjects():
     finally:
         session.close()
 
-def main():
-    # drop_data()
-    insert_subjects()
+# def main():
+#     # drop_data()
+#     insert_subjects()
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
