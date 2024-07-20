@@ -10,6 +10,6 @@ load_dotenv()
 
 DATABASE_URL2 = os.getenv('DATABASE_URL2')
 
-engine = create_engine(DATABASE_URL2, echo=True, pool_size=5, max_overflow=0)
+engine = create_engine(DATABASE_URL2, echo=False, pool_size=5, max_overflow=0)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
